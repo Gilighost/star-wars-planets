@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: "AnakinMono";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--bg-primary);
+}
+
+/*Color profile*/
+
+:root {
+  --bg-primary: #130c0e;
+  --bg-secondary: #3c3439;
+  --bg-tr: #655d67;
+  --yellow: #fee81f;
+  --blue: #1cc2ee;
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: "AnakinMono";
+  src: local("anakinmono"), url(./fonts/anakinmono.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "DistantGalaxy";
+  src: local("SFDistantGalaxy"),
+    url(./fonts/SFDistantGalaxy.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "StarJedi";
+  src: local("Starjout"), url(./fonts/Starjout.ttf) format("truetype");
+}
