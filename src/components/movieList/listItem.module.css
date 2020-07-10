@@ -11,13 +11,10 @@
 
 .listItem .title {
   font: 24px "DistantGalaxy";
-}
-
-.listItem .title:hover {
   cursor: pointer;
 }
 
 .planetInfo {
   color: var(--blue);
-  margin: 10px;
+  margin: 4px;
 }
