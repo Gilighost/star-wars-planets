@@ -1,0 +1,23 @@
+.listItem {
+  min-width: 200px;
+  width: 100%;
+  color: var(--yellow);
+  border: 1px solid var(--yellow);
+  border-radius: 4px;
+  margin: 4px 0;
+  padding: 4px 4px;
+  box-sizing: border-box;
+}
+
+.listItem .title {
+  font: 24px "DistantGalaxy";
+}
+
+.listItem .title:hover {
+  cursor: pointer;
+}
+
+.planetInfo {
+  color: var(--blue);
+  margin: 10px;
+}
