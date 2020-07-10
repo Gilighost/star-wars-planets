@@ -10,13 +10,13 @@
   text-shadow: 4px 4px 1px var(--bg-secondary);
 }
 
-@media screen and (max-width: 700px) {
+@media all and (max-width: 700px) {
   .appHeader {
     font-size: 40px;
   }
 }
 
-@media screen and (max-width: 490px) {
+@media all and (max-width: 490px) {
   .appHeader {
     font-size: 24px;
   }
