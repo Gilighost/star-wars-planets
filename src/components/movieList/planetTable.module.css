@@ -1,0 +1,25 @@
+.planetTable {
+  border-collapse: collapse;
+  background-color: var(--bg-secondary);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.planetTable th {
+  cursor: pointer;
+  font-weight: bolder;
+  border-bottom: 1px solid var(--blue);
+}
+
+.planetTable th,
+td {
+  padding: 5px;
+}
+
+.planetTable tr:nth-child(even) {
+  background-color: var(--bg-tr);
+}
+
+.number {
+  text-align: right;
+}
