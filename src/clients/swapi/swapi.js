@@ -30,5 +30,5 @@ function pluralRequestGenerator(path) {
 
 module.exports = {
   getFilms: pluralRequestGenerator("films"),
-  getPlanet: (url) => request(url),
+  getPlanet: (url) => request(url.replace("http:", "https:")),
 };
