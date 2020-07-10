@@ -82,7 +82,7 @@ function PlanetTable({ planets }) {
         </tr>
         {planets.sort(compare(orderBy)).map((p, i) => (
           <tr key={i}>
-            <td>{p.name}</td>
+            <td className={styles.name}>{p.name}</td>
             <td>{p.terrain}</td>
             <td>{p.climate}</td>
             <td>{p.gravity.replace("standard", "std.")}</td>
