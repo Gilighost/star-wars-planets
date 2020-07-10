@@ -12,10 +12,22 @@ export class App extends Component {
   componentDidMount() {
     SWApi.getFilms().then(({ results }) => {
       this.setState({
-        movies: results.map((movie) => ({
-          title: movie.title,
-          planetUrls: movie.planets,
-        })),
+        movies: [
+          ...results.map((movie) => ({
+            title: movie.title,
+            planetUrls: movie.planets,
+          })),
+          {
+            title: "The Fellowship of the Planetary Ring",
+            planetUrls: [
+              "http://swapi.dev/api/planets/7/",
+              "http://swapi.dev/api/planets/26/",
+              "http://swapi.dev/api/planets/33/",
+              "http://swapi.dev/api/planets/44/",
+              "http://swapi.dev/api/planets/55/",
+            ],
+          },
+        ],
       });
     });
   }
@@ -23,7 +35,7 @@ export class App extends Component {
   render() {
     const { movies } = this.state;
     return (
-      <div className="App">
+      <div className={styles.app}>
         <header className={styles.appHeader}>Star Wars Planets</header>
         {movies ? <MovieList movies={movies} /> : <LoadingSpinner />}
       </div>
