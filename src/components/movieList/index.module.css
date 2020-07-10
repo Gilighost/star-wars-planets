@@ -3,4 +3,19 @@
   flex-direction: column;
   max-width: 940px;
   margin: 0 auto;
+  animation: crawlIn 1.5s linear;
+}
+
+@keyframes crawlIn {
+  0% {
+    opacity: 0;
+    transform: translateY(80%) rotate3d(0.5, 0, 0, -10deg)
+      scale3d(0.75, 0.75, 0.75);
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) rotate3d(0) scale3d(1, 1, 1);
+  }
 }
