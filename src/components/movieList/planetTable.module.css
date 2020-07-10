@@ -3,6 +3,7 @@
   background-color: var(--bg-secondary);
   border-radius: 4px;
   font-size: 14px;
+  overflow: hidden;
 }
 
 .planetTable th {
@@ -18,8 +19,62 @@ td {
 
 .planetTable tr:nth-child(even) {
   background-color: var(--bg-tr);
+  border-radius: 0 4px;
 }
 
 .number {
   text-align: right;
+}
+
+@media all and (max-width: 880px) {
+  .planetTable td:nth-of-type(9),
+  th:nth-of-type(9) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 810px) {
+  .planetTable td:nth-of-type(8),
+  th:nth-of-type(8) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 732px) {
+  .planetTable td:nth-of-type(7),
+  th:nth-of-type(7) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 630px) {
+  .planetTable td:nth-of-type(6),
+  th:nth-of-type(6) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 522px) {
+  .planetTable td:nth-of-type(5),
+  th:nth-of-type(5) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 440px) {
+  .planetTable td:nth-of-type(4),
+  th:nth-of-type(4) {
+    display: none;
+  }
+}
+
+@media all and (max-width: 356px) {
+  .planetTable {
+    font-size: 12px;
+  }
+
+  .planetTable th,
+  td {
+    padding: 3px;
+  }
 }
